@@ -15,7 +15,6 @@ const URLShortener = () => {
     setIsLoading(true);
     
     try {      
-      // Replace with api
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}/Url/CreateShortUrl`, {
         method: 'POST',
         headers: {
